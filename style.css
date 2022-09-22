@@ -7,19 +7,23 @@
 }
 ul{
     list-style: none;
-    display: flex;
+    display: -webkit-inline-box;
     padding: 20px 0;
+}
+h1{
+    list-style: none;
+    text-decoration-color: orangered;
+    text-transform: uppercase;
 }
 a{
     text-decoration: none;
     text-transform: uppercase;
-    color: white;
+    color: orange;
 }
 li{
-    padding: 20px 0;
+    padding: 0 20px;
 }
 .container{
-    background-color: brown;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -27,7 +31,7 @@ li{
     width: 100%;
 }
 .img_fundo{
-    background-image: url(./img/IMG_20220919_192655_526.jpg);
+    background-image: url(./img/IMG_20220919_192724_988.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -51,8 +55,8 @@ li{
 }
 .buttom{
     padding: 20px 40px;
-    border: 1px solid chocolate;
-    color: white;
+    border: 1px solid white;
+    color: orangered;
 }
 
 .button:hover{
