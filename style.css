@@ -4,61 +4,232 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
-}
-ul{
-    list-style: none;
-    display: -webkit-inline-box;
-    padding: 20px 0;
-}
-h1{
-    list-style: none;
-    text-decoration-color: orangered;
-    text-transform: uppercase;
-}
-a{
-    text-decoration: none;
-    text-transform: uppercase;
-    color: orange;
-}
-li{
-    padding: 0 20px;
-}
-.container{
-    display: flex;
+ }
+ ul{
+     list-style: none;
+     display: flex;
+     padding: 20px 0;
+ }
+ a{
+     text-decoration: none;
+     text-transform: uppercase;
+     color: white;
+ }
+ li{
+     padding: 0 20px;
+ }
+ 
+ .container{
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+     position: absolute;
+     width: 100%;
+ }
+ .img_fundo{
+     background-image: url(./img/img_fundo.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     min-height: 100vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin-bottom: 50px;
+ }
+ .img_fundo h1{
+     color: white;
+     font-size: 3rem;
+     margin-bottom: 15px;
+ }
+ 
+ .img_fundo span{
+     color: chocolate;
+ }
+ 
+ .img_fundo h3{
+     color: rgba(210, 105, 30, 0.849);
+     font-size: 2rem;
+     margin-bottom: 30px;
+ }
+ .button{
+     padding: 20px 60px;
+     border: 1px solid chocolate;
+     color: rgb(179, 93, 32);
+ }
+ 
+ .button:hover{
+     background-color: chocolate;
+     color: white;
+ }
+ .titulo{
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+     height: 200px;
+     align-items: center;
+     font-size: 100%;
+     padding-top: 0%;
+ }
+ 
+ .titulo h1{
+     margin-bottom: 15px;
+     font-size: 2em;
+ }
+ .titulo h2{
+    margin-bottom: 15px;
+    font-size: 2em;
+    max-width: 350;
     justify-content: flex-end;
-    align-items: center;
-    position: absolute;
-    width: 100%;
-}
-.img_fundo{
-    background-image: url(./img/IMG_20220919_192724_988.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
+    color: chocolate;
+ }
+ 
+ .titulo span {
+     color: chocolate;
+ }
+ 
+ .titulo p{
+     max-width: 350px;
+     text-align: center;
+     font-weight: 300;
+     margin-bottom: 10px;
+ }
+ 
+ .titulo hr{
+     width: 400px;
+     height: 4px;
+     background-color: chocolate;
+ }
+ .card-container{
+      display: flex;
+      justify-content: space-around;
+      height: 550px;
+      flex-direction: row;
+ }
+ .card-img img{
+     width: 300px;
+     height: 100%;
+ }
+ 
+ .card-body{
+     background-color: white;
+     height: 280px;
+     display: flex;
+     flex-direction: column;
+     box-shadow: 8px 3px 3px black;
+ }
+ .card-titulo h1{
+     padding: 10px 0 0 10px;
+     font-size: 1.2em;
+     text-transform: uppercase;
+     padding-bottom: 10px;
+     color: rgb(46,35,35);
+ }
+ 
+ .card-titulo span{
+     color: black;
+ }
+ 
+ .card-titulo h2{
+     padding: 10px 0 0 10px;
+     font-size: 0.8em;
+     text-transform: uppercase;
+     color: black;
+ }
+ 
+ .card-titulo b{
+   color: orange;
+ }
+ 
+ @media(max-width:700px){
+ 
+     .card-body{
+         margin-bottom: 10px;
+     }
+ 
+ }
+ 
+
+
+ .titulofem{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    width: 100%;
+    height: 80px;
     align-items: center;
-}
-.img_fundo h1{
-    color: white;
-    font-size: 3rem;
-    margin-bottom: 15px;
-}
-.img_fundo span{
-    color: chocolate;
-}
-.img_fundo h3{
-    color: white;
-    margin-bottom: 30px;
-}
-.buttom{
-    padding: 20px 40px;
-    border: 1px solid white;
-    color: orangered;
+    font-size: 100%;
 }
 
-.button:hover{
-background-color: chocolate;
+.titulofem h1{
+    margin-bottom: 15px;
+    font-size: 2em;
 }
+.titulofem h2{
+   margin-bottom: 15px;
+   font-size: 2em;
+   max-width: 350;
+   justify-content: flex-end;
+   color: chocolate;
+}
+
+.titulofem span {
+    color: chocolate;
+}
+.titulofem hr{
+    width: 200px;
+    height: 50px;
+    background-color: chocolate;
+}
+.card-containerfem{
+     display: flex;
+     justify-content: space-around;
+     height: 500px;
+     flex-direction: row;
+}
+.card-imgfem img{
+    width: 280px;
+    height: 80%;
+}
+
+.card-bodyfem{
+    background-color: white;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 8px 3px 3px black;
+}
+.card-titulofem h1{
+    padding: 10px 0 0 10px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    color: rgb(46,35,35);
+}
+
+.card-titulofem span{
+    color: black;
+}
+
+.card-titulofem h2{
+    padding: 10px 0 0 10px;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    color: black;
+}
+
+.card-titulofem b{
+  color: orange;
+}
+
+ 
+ .rodape{
+      background-color: chocolate;
+      width: 100%;
+      padding: 25px;
+     text-align: flex-wrap;
+ }
+ 
+ .rodape p{
+     color: white;
+ }
